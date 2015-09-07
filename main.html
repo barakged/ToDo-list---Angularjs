@@ -1,0 +1,50 @@
+
+<div ng-controller="storageController">
+  <div class="jumbotron text-center">
+    <h1>Hello Sir, this is your job for now</h1>
+    <p>you can  easily <span class="text-danger">add</span> new task.</p>
+      <h2>you have left {{tasks.length}} tasks !!!</h2>
+</div>
+<div style="    margin-top: -15px;
+    margin-bottom: 15px">
+      <div class="form">
+        <div class="input-group">
+          <input type="text" class="form-control" ng-model="task" placeHolder="Please fill task ID" placeHolder="Please fill task ID">
+          <input type="text" class="form-control" ng-model="task2" placeHolder="Please fill task Title" placeHolder="Please fill task Title">
+          <input type="text" class="form-control" ng-model="task3" placeHolder="Please fill task Description" placeHolder="Please fill task Description">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button" ng-click="addTask()" style="margin-left: 15px;"><span
+              class="glyphicon glyphicon-plus"></span>Add Task </button>
+              <hr>
+          </span>
+        </div>
+      </div>
+</div>  
+
+      <ul class="list-group" ng-show="tasks.length > 0">
+
+        <li class="list-group-item clearfix task" ng-repeat="todo in tasks track by $index" ng-class="{disabled: todo.done}" style="text-align: center"> 
+   
+            <a href="#/task/{{todo.task}}">
+              <span class="lead">{{todo.task}}</span>          
+              <span class="lead">{{todo.task2}}</span>       
+              <span class="lead">{{todo.task3}}</span> 
+              
+            </a>
+
+         
+            <span class="pull-right">
+              <button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-pencil" 
+                ng-click="editTask($index)"></span></button>
+              <button class="btn btn-primary btn-xs" ng-show="!todo.done"><span class="glyphicon glyphicon-ok" 
+                ng-click="doneTask($index)"></span></button>
+              <button class="btn btn-primary btn-xs" ng-show="todo.done"><span class="glyphicon glyphicon-repeat" 
+                ng-click="unDoneTask($index)"></span></button>
+              <button class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove" 
+                ng-click="deleteTask($index)"></span></button>
+            </span>
+         
+ 
+        </li>
+      </ul>
+</div>
