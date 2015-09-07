@@ -1,0 +1,30 @@
+<div class="details" ng-controller="storageController">
+
+<h1 data-ng-init="init()">The Task: <h1>
+            <div style="    margin-top: -15px;
+    margin-bottom: 15px">
+      <div class="form">
+        <div class="input-group">
+          <input type="text" class="form-control" ng-model="task" placeHolder="here will be id">
+          <input type="text" class="form-control" ng-model="task2" placeHolder="here will be title">
+          <input type="text" class="form-control" ng-model="task3" placeHolder="here will be descp">
+          <span class="input-group-btn">
+         
+              <hr>
+          </span>
+        </div>
+      </div>
+
+   
+</div>  
+         <div ng-model="filterValue">       
+<div input-type>     {{(tasks | filter:{task:filterValue})}} <br> <br><br> <br></div>
+
+
+
+	
+		<div>
+				<br><hr><br>
+				<a href="index.html" class="link">&laquo;back to Main</a>
+		</div>
+  </div>
