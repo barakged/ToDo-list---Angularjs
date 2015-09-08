@@ -1,30 +1,30 @@
 <div class="details" ng-controller="storageController">
 
-<h1 data-ng-init="init()">The Task: <h1>
-            <div style="    margin-top: -15px;
+    <h1 data-ng-init="init()" style="
+    background-color: rgb(176, 177, 170);
+">Mission is Possible: <h1>
+<div class="jumbotron text-center">
+    <h1>Hello again... </h1><h2><br>your task is ready to be done</h2>
+</div>
+<div style="    margin-top: -15px;
     margin-bottom: 15px">
-      <div class="form">
+    <div class="form">
         <div class="input-group">
-          <input type="text" class="form-control" ng-model="task" placeHolder="here will be id">
-          <input type="text" class="form-control" ng-model="task2" placeHolder="here will be title">
-          <input type="text" class="form-control" ng-model="task3" placeHolder="here will be descp">
-          <span class="input-group-btn">
-         
+            <ul>
+          <input type="text" class="form-control" ng-model="taskme" placeHolder="Please fill task ID">
+          <input type="text" class="form-control" ng-model="taskme2" placeHolder="Please fill task Title">
+          <input type="text" class="form-control" ng-model="taskme3" placeHolder="Please fill task Description">
+            <span class="input-group-btn">
+            </ul>
               <hr>
           </span>
         </div>
-      </div>
-
-   
-</div>  
-         <div ng-model="filterValue">       
-<div input-type>     {{(tasks | filter:{task:filterValue})}} <br> <br><br> <br></div>
-
-
-
-	
-		<div>
-				<br><hr><br>
-				<a href="index.html" class="link">&laquo;back to Main</a>
-		</div>
-  </div>
+    </div>
+</div>
+<div>
+    <br>
+    <hr>
+    <br>
+    <a href="index.html" class="link">&laquo;back to Main</a>
+</div>
+</div>
