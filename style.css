@@ -7,10 +7,23 @@
 }
 body {
 	background: rgb(240,240,240);
+	 background-image: url("http://www.biocruiser.com/wp-content/uploads/2012/02/MoonShot5-300x187.png");
+    background-color: #cccccc;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-
+.navbar-brand {
+    float: left;
+    padding: 15px;
+    font-size: 28px;
+    line-height: 20px;
+    height: 57px;
+}
 .input-group-btn:last-child>.btn {
     margin-left: 10px;
+
 }
 
 hr{
@@ -32,7 +45,7 @@ hr{
 }
 .main {
 	width: 600px;
-	margin: 50px auto auto;
+	margin: 20px auto auto;
 	background-color: #39008D;
 	border-radius: 10px;
 	box-shadow: 0px 0px 0px 10px black;
@@ -179,6 +192,12 @@ text-align: center;
 	padding: 7px;
 	color: rgba(255, 255, 255, 1);
 }
+.btn-primary {
+    color: #fff;
+    background-color: #1EB83F;
+    border-color: #357ebd;
+}
+
 .magnifyDate {
 	margin-right: 0px;
 }
